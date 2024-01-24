@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .modal {
+        max-width: 400px;
+        margin: 30px;
+        border: 0;
+        background-color: aqua;
+        font-size: 2rem;
+        border-radius: 5px;
+    }
+
+    .modal::backdrop {
+        background-color: blue;
+        opacity: .2;
+    }
+</style>
+
+<body>
+
+    <button id="start">start</button>
+
+
+
+    <dialog class="modal">
+        <h2>Kello world</h2>
+        <form action="#" method="dialog">
+            <label for="playerOne">Player1 name:</label>
+            <input type="text" id="playerOne"> <br> <br>
+
+            <label for="playerTwo">Player2 name:</label>
+            <input type="text" id="playerTwo">
+            <button id="submit">submit form</button>
+        </form>
+        <button id="close">Close</button>
+
+    </dialog>
+
+    <div class="bresh">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores illo perferendis odit cum
+        itaque. Saepe adipisci tempore amet error possimus consequuntur, cupiditate nesciunt corporis autem cumque
+        repellat dolorum minus recusandae!</div>
+
+
+    <script>
+        const closeBtn = document.querySelector("#close")
+        const modal = document.querySelector(".modal")
+        document.querySelector("#start").addEventListener("click", function () {
+            modal.showModal()
+        })
+
+        closeBtn.addEventListener("click", () => {
+            modal.close()
+        })
+
+
+    </script>
+
+
+
+</body>
+
+</html>

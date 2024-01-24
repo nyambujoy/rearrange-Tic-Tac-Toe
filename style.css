@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lemon", serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: #304211;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 50px;
+    font-size: 3rem;
+    color: #ffa500
+}
+
+h2 {
+    margin: 20px;
+    color: #ffa500;
+}
+
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.cards {
+    font-family: "Lemon", serif;
+    border: 1px solid beige;
+    height: 150px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #ffa500;
+}
+
+#id1,
+#id2,
+#id3 {
+    border-top: none;
+    /* font-family: "Lemon", serif; */
+
+}
+
+#id1,
+#id4,
+#id7 {
+    border-left: none;
+}
+
+#id7,
+#id8,
+#id9 {
+    border-bottom: none;
+}
+
+#id6,
+#id9,
+#id3 {
+    border-right: none;
+}
+
+.footer {
+    margin-top: 50px;
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 120px;
+}
+
+
+#start {
+    width: 150px;
+    height: 40px;
+    /* padding: 15px 15px; */
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    background-color: #ffa500;
+    font-size: 2rem;
+    box-shadow: 0 10 10px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.restart {
+    width: 150px;
+    height: 40px;
+    /* padding: 15px 15px; */
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    background-color: #ffa500;
+    font-size: 2rem;
+    box-shadow: 0 10 10px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#result {
+    color: beige;
+    font-size: 2rem;
+}
+
+h6 {
+    margin-top: 20px;
+    font-family: 'Permanent Marker', cursive;
+    color: grey;
+
+}
+
+.modal {
+    max-width: 600px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin: 30px; */
+    padding: 20px;
+    background-color: rgb(27, 16, 16);
+    color: #ffa500;
+
+}
+
+.modal::backdrop {
+    background-color: rgb(34, 33, 33);
+    opacity: .4;
+}
+
+.modal h3 {
+    background-color: transparent;
+    margin: 20px;
+}
+
+#close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 1.3rem;
+}
+
+.selection {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#submit {
+    width: 200px;
+    padding: 5px;
+    margin: 20px 0;
+    background-color: #4a641f;
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'Permanent Marker', cursive;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.modal form #playerOne {
+    height: 40px;
+    width: 400px;
+    font-size: 1.3rem;
+    padding: 7px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.modal form #playerTwo {
+    height: 40px;
+    width: 400px;
+    font-size: 1.3rem;
+    padding: 7px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
